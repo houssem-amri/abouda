@@ -1,0 +1,46 @@
+<div class="page-section">
+    <div class="container">
+      <h1 class="text-center wow fadeInUp">Dashboard Admin</h1>
+  
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Users</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Doctors</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Orders</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Full name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+                <th scope="col">Actions</th>
+                <th scope="col">Name Doctors</th>
+                <th scope="col">Speciality</th>
+                <th scope="col">localization</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let u of users">
+                <!-- <th scope="row">{{u.fullName}}</th>
+                <td>{{u.email}}</td>
+                <td>{{u.role}}</td>
+                <td>{{u.name Doctors}}</td>
+                <td>{{u.departement}</td>
+                <td>{{u.localization}}</td> -->
+                <td>
+                    <button type="button" class="btn btn-primary">display</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-primary">delete</button>
+                </td>
+              </tr>
+             
+            </tbody>
+          </table></div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2</div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+      </div>
+    </div>
+  </div> <!-- .page-section -->

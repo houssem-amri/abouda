@@ -1,0 +1,36 @@
+<section class="regervation_part section_padding" style="margin-top: 100px; ">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5">
+          <div class="section_tittle">
+            <h2>Edit Doctor</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+        <div class="col-lg-6">
+        </div> 
+          <div class="regervation_part_iner">
+            <form #editDoctor="ngForm" (ngSubmit)="editDoctor()" >
+           
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder=" Doctor Name *"[(ngModel)]="doctor.name"[ngModelOptions]="{standalone:true}">
+                  </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder=" departement*"[(ngModel)]="doctor.departement"[ngModelOptions]="{standalone:true}">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder=" localization*"[(ngModel)]="doctor.localization"[ngModelOptions]="{standalone:true}">
+                  </div>
+                 
+                <div class="regerv_btn">
+                  <button class="btn_4">Edit</button>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+  </section>
+

@@ -1,0 +1,26 @@
+<div class="table">
+    <div>
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Doctor Name</th>
+                <th scope="col">departement</th>
+                <th scope="col">localization</th>
+                <th scope="col">Actions</th> 
+              </tr>
+            </thead>
+            <tbody>
+               <tr *ngFor= "let c of chefs">
+                <th scope="row">{{c.name}}</th>
+                <td>{{c.departement}}</td>
+                <td>{{c.localization}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary">Display</button>
+                    <button type="button" class="btn btn-warning"(click)="goToEdit(c._id)">Edit</button>
+                    <button type="button" class="btn btn-danger"(click)="deleteChef(c._id)" >Delete</button>
+                </td>
+              </tr> 
+            </tbody>
+          </table>
+    </div>
+  </div>

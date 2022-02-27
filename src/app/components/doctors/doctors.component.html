@@ -1,0 +1,57 @@
+
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  
+
+  <div class="page-banner overlay-dark bg-image" style="background-image: url(../assets/img/bg_image_1.jpg);">
+    <div class="banner-section">
+      <div class="container text-center wow fadeInUp">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Doctors</li>
+          </ol>
+        </nav>
+        <h1 class="font-weight-normal">Our Doctors</h1>
+      </div> <!-- .container -->
+    </div> <!-- .banner-section -->
+  </div> <!-- .page-banner -->
+
+  <section class="chefs_part blog_item_section section_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5">
+         
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4" *ngFor="let doctor of doctors">
+        <app-doctor [doctorInput]="doctor"></app-doctor>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  
+
+  <div class="page-section banner-home bg-image" style="background-image: url(../assets/img/banner-pattern.svg);">
+    <div class="container py-5 py-lg-0">
+      <div class="row align-items-center">
+        <div class="col-lg-4 wow zoomIn">
+          <div class="img-banner d-none d-lg-block">
+            <img src="../assets/img/mobile_app.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-8 wow fadeInRight">
+          <h1 class="font-weight-normal mb-3">Get easy access of all features using One Health Application</h1>
+          <a href="#"><img src="../assets/img/google_play.svg" alt=""></a>
+          <a href="#" class="ml-2"><img src="../assets/img/app_store.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .banner-home -->
+
